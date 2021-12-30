@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UkP-Ge-OT5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="XAb-qe-ERJ">
+            <objects>
+                <viewController id="UkP-Ge-OT5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TJN-du-lEL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="VsZ-mL-HCh">
+                                <rect key="frame" x="57" y="178.5" width="300" height="539"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree" translatesAutoresizingMaskIntoConstraints="NO" id="WfJ-0o-TJz">
+                                        <rect key="frame" x="50" y="0.0" width="200" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="Lpv-PW-acj"/>
+                                            <constraint firstAttribute="height" constant="120" id="qmb-Pe-cK4"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M3y-wk-Klh">
+                                        <rect key="frame" x="0.0" y="190" width="300" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="8Sx-9j-TCS"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="LNs-qc-odX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OUe-K1-2RP">
+                                        <rect key="frame" x="0.0" y="295" width="300" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLK-py-Ouo">
+                                        <rect key="frame" x="115" y="399" width="70" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="U7q-tb-0hb"/>
+                                            <constraint firstAttribute="height" constant="35" id="XZH-Ks-66s"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bca-DZ-gez">
+                                        <rect key="frame" x="100" y="504" width="100" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="AWT-lb-fb1"/>
+                                            <constraint firstAttribute="height" constant="35" id="OZp-Vh-Vec"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="New User ?"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rLK-py-Ouo" firstAttribute="top" secondItem="OUe-K1-2RP" secondAttribute="bottom" constant="70" id="7ol-W6-P2k"/>
+                                    <constraint firstItem="M3y-wk-Klh" firstAttribute="top" secondItem="WfJ-0o-TJz" secondAttribute="bottom" constant="70" id="CNe-ut-kjc"/>
+                                    <constraint firstItem="WfJ-0o-TJz" firstAttribute="top" secondItem="VsZ-mL-HCh" secondAttribute="top" id="FKq-tr-hp3"/>
+                                    <constraint firstItem="OUe-K1-2RP" firstAttribute="leading" secondItem="M3y-wk-Klh" secondAttribute="leading" id="GI8-tr-sRr"/>
+                                    <constraint firstItem="OUe-K1-2RP" firstAttribute="top" secondItem="M3y-wk-Klh" secondAttribute="bottom" constant="70" id="N4k-sc-POP"/>
+                                    <constraint firstAttribute="bottom" secondItem="bca-DZ-gez" secondAttribute="bottom" id="WpY-2b-omj"/>
+                                    <constraint firstItem="bca-DZ-gez" firstAttribute="top" secondItem="rLK-py-Ouo" secondAttribute="bottom" constant="70" id="eFf-bj-ZaZ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d9F-XZ-gsV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VsZ-mL-HCh" firstAttribute="centerX" secondItem="TJN-du-lEL" secondAttribute="centerX" id="CGa-KP-Xfb"/>
+                            <constraint firstItem="VsZ-mL-HCh" firstAttribute="centerY" secondItem="TJN-du-lEL" secondAttribute="centerY" id="uqh-lC-M7d"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kna-ph-BeU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="182.60869565217394" y="9.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Tree" width="771" height="480"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
